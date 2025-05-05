@@ -14,14 +14,23 @@ app.get("/", async (req: Request, res: Response): Promise<any> => {
 	}
 
 	try {
-		const response = await fetch(url);
+		const headers = {
+			"User-Agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64)",
+			Accept: "text/html,application/xhtml+xml",
+			"Accept-Language": "it-IT,it;q=0.9",
+			Connection: "keep-alive",
+			Referer: "https://www.google.com/",
+			DNT: "1",
+		};
+
+		const response = await fetch(url, { headers: headers });
 		if (!response.ok) {
 			throw new Error(`Failed to fetch URL. Status: ${response.status}`);
 		}
 
 		const html = await response.text();
-		turndownService.remove('script');
-		turndownService.remove('style');
+		turndownService.remove("script");
+		turndownService.remove("style");
 		const markdown = turndownService.turndown(html);
 
 		res.send({
