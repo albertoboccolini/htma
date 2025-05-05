@@ -1,0 +1,23 @@
+{
+  "name": "htma",
+  "description": "A simple Express API to fetch an HTML page and convert it to Markdown",
+  "version": "0.0.1",
+  "main": "api/index.ts",
+  "license": "MIT",
+  "author": "albertoboccolini",
+  "scripts": {
+    "build": "tsc"
+  },
+  "dependencies": {
+    "express": "^5.1.0",
+    "turndown": "^7.2.0"
+  },
+  "devDependencies": {
+    "@types/express": "^5.0.1",
+    "@types/turndown": "^5.0.5",
+    "@vercel/build-utils": "^10.5.1",
+    "@vercel/node": "^1.15.0",
+    "tslib": "^2.8.1",
+    "typescript": "^5.8.3"
+  }
+}
