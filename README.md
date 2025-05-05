@@ -2,7 +2,7 @@
 
 This is a simple Express API that uses [turndown](https://github.com/mixmark-io/turndown) to fetch an HTML page and convert it to Markdown. This project is intended for educational and study purposes only, and any use for unauthorized web scraping is strictly prohibited.
 
-**N.B.** This project does not promote or encourage web scraping in any way. It was created out of a personal need to access certain online documentation that was not available through official APIs. The tool itself is minimal—just a few lines of code and a couple of libraries—and is easily replicable for legitimate, private use cases.
+**N.B.** This project does not promote or encourage web scraping in any way. It was created out of a personal need to access certain online documentation that was not available through official APIs. The tool itself is minimal just a few lines of code and a couple of libraries and is easily replicable for legitimate, private use cases.
 
 ## Getting Started
 
